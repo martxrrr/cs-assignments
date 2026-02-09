@@ -1,0 +1,70 @@
+#body{
+    background-color:  #0a192f;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+form{
+    background-color:  #0a192f;    
+    color: aliceblue;
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+
+    position: absolute;
+    top: 110px;
+    left: 100px;
+}
+#heading{
+    color: #64ffda;
+    font-family: 'Courier New', Courier, monospace;
+}
+#fname{
+    background-color: beige;
+    height: 40px;
+    border-radius: 5px;
+}
+#lname{
+    background-color: beige;
+    height: 40px;
+    border-radius: 5px;
+}
+#age{
+    background-color: beige;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+}
+#textbox{
+    margin-bottom: 20px;
+}
+#imgdiv{
+    margin-right: 50px;
+}
+button{
+    background-color: #0e7f65;
+    padding: 10px;
+    width: 120px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #64ffda;
+}
+
+#textdiv{
+    position: absolute;
+    top: 110px;
+    left: 900px;
+    width: 500px;
+    height: 100px;
+
+    background-color: #0a192f;
+    color: beige;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+}

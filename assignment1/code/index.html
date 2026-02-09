@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Info Form</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body id="body">
+        <h1 id="heading">Personal Info Form</h1>
+        <hr>
+        <form>
+            <h1>Personal Details</h1>
+            <div>
+                <label for="fname">Enter your first name</label><br>
+                <input type="text" id="fname" required placeholder="First Name">
+            </div>
+            <br>
+            <div>
+                <label for="lname">Enter your last name</label><br>
+                <input type="text" id="lname" required placeholder="Last Name">
+            </div>
+            <br>  
+            <div>
+                <label for="age">Age: </label><br>
+                <input type="number" id="age" required placeholder="Enter your age">
+            </div>
+            <hr>
+            <h1>Check in your favorite programming language</h1>
+            <div>
+                <img id="imgdiv" src="assets/cpp.png">
+                <img id="imgdiv" src="assets/python.png">
+                <img id="imgdiv" src="assets/js.png">
+            </div>
+            <div>
+                <label for="cpp">C++</label>
+                <input type="radio" id="cpp" name="language">
+
+                <label for="python">Python</label>
+                <input type="radio" id="python" name="language">
+
+                <label for="javascript">Javascript</label>
+                <input type="radio" id="javascript" name="language">
+
+            </div>
+            <br>
+            <button type="button" onclick="Click()">Submit</button> 
+        </form>
+        <div id="textdiv">       
+            <p id="textbox"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
