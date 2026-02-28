@@ -1,1 +1,1 @@
-A repo  for my comp sci assigements
+A repo  for my comp sci assignments
