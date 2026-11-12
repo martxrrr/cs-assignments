@@ -7,22 +7,22 @@ class Main{
         Bank bank = new Bank();
 
         Thread customerA = new Thread(() -> {
-            bank.withdraw(20000); //withdraw
+            bank.withdraw(20000);
         });
         Thread customerB = new Thread(() -> {
-            bank.deposit(15000); //deposits
+            bank.deposit(15000);
         });
         Thread customerC = new Thread(() -> {
-            bank.transfer(30000); //transfers
+            bank.transfer(30000);
         });
         Thread customerD = new Thread(() -> {
-            bank.withdraw(25000); //withdraws
+            bank.withdraw(25000);
         });
         Thread customerE = new Thread(() -> {
-            bank.withdraw(10000); //withdraw
+            bank.withdraw(10000);
         });
         Thread customerF = new Thread(() -> {
-            bank.check_balance(); //checks balance
+            bank.check_balance();
         });
 
         customerA.start();
@@ -50,7 +50,7 @@ class BankAccount{
         if(amt <= 0 || amt > bank_balance_){
             bank_balance_ -= 0;
         }else{
-            // System.out.println("Successfully withdrawn Ksh." + amt);
+            System.out.println("Successfully withdrawn Ksh." + amt);
             bank_balance_ -= amt;
         }
     }
@@ -58,7 +58,7 @@ class BankAccount{
         if(amt <= 0){
             bank_balance_ += 0;
         }else{
-            // System.out.println("Successfully deposited Ksh." + amt);
+            System.out.println("Successfully deposited Ksh." + amt);
             bank_balance_ += amt;    
         }
     }
@@ -66,14 +66,14 @@ class BankAccount{
         if(amt <= 0 || amt > bank_balance_){
             bank_balance_ -= 0;
         }else{
-            // System.out.println("Successfully transferred Ksh." + amt);
+            System.out.println("Successfully transferred Ksh." + amt);
             bank_balance_ -= amt;
         }
     }
 
     //inquiries
     public void check_balance(){
-        // System.out.println("Current bank balance : Ksh." + bank_balance_);
+        System.out.println("Current bank balance : Ksh." + bank_balance_);
     }
     public void outro(){
         System.out.println("THANK YOU FOR VISITING US!");
