@@ -6,9 +6,11 @@
 (define new-numbers
   (cons 4 numbers))
 
+
 (display numbers)
 (newline)
 ; (1 2 3)
+
 
 (display new-numbers)
 (newline)
